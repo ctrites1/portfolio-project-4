@@ -1,35 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import "tailwindcss";
-
-@font-face {
-	font-family: "sofia_pro";
-	src: url("/fonts/SofiaProRegularAz.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "sofia_pro_bold";
-	src: url("/fonts/SofiaProBoldAz.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
+/* 
+@theme {
+	--font-nunito: "Nunito", sans-serif;
+} */
 
 :root {
-	--font-headerOne: 30px/32px "sofia_pro_bold", Helvetica, Arial, sans-serif;
-	--font-headerTwo: 24px/28px "sofia_pro_bold", Helvetica, Arial, sans-serif;
-	--font-headerThree: 18px/20px "sofia_pro_bold", Helvetica, Arial, sans-serif;
-	--font-copyOne: 16px/24px "sofia_pro", Helvetica, Arial, sans-serif;
-	--font-copyTwo: 13px/20px "sofia_pro", Helvetica, Arial, sans-serif;
-
-	font-family: var(--font-copyOne);
 	line-height: 1.5;
 	font-weight: 400;
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #f9f5ee;
+	background-color: rgba(246, 243, 235, 255);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
