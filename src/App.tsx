@@ -1,12 +1,4 @@
-import {
-	User,
-	ShoppingBag,
-	Heart,
-	Gift,
-	MapPin,
-	Home,
-	Coffee,
-} from "lucide-react";
+import { User, ScanQrCode, Home, Coffee, Sparkles } from "lucide-react";
 
 const App = () => {
 	return (
@@ -54,44 +46,60 @@ const App = () => {
 					</div>
 				</div>
 
-				{/* Feature grid */}
+				{/* Tims+ Hero ish thing */}
+				{/* 
+					TODO: combine some feature buttons in Tims+ area, maybe add order to bottom bar 
+				*/}
+				<div className="grid grid-cols-1 gap-4 mb-6">
+					<div className="bg-tims-red p-4 rounded-xl shadow-sm flex flex-row items-center">
+						<h2 className="text-xl italic font-bold text-white mr-2">Tims+</h2>
+						<p className="text-sm text-white italic font-medium">
+							{" "}
+							Financial, Shop, Community, and More!
+						</p>
+					</div>
+				</div>
+
+				<div className="mb-6">
+					<h1 className="text-xl font-bold text-gray-800">Tims Challenges</h1>
+				</div>
 				<div className="grid grid-cols-4 gap-4 mb-6">
 					{/* Row 1 */}
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<div className="w-10 h-6 bg-gray-800 rounded"></div>
 						</div>
 						<p className="text-center text-xs font-medium">Tims Financial</p>
-					</div>
+					</div> */}
 
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<div className="w-8 h-8 bg-yellow-400 rounded-lg transform rotate-45"></div>
 						</div>
 						<p className="text-center text-xs font-medium">Offers</p>
-					</div>
+					</div> */}
 
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<div className="w-8 h-8 text-red-500">🛵</div>
 						</div>
 						<p className="text-center text-xs font-medium">Delivery</p>
-					</div>
+					</div> */}
 
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<div className="w-8 h-8 text-amber-700">🛍️</div>
 						</div>
 						<p className="text-center text-xs font-medium">TimShop</p>
-					</div>
+					</div> */}
 
 					{/* Row 2 */}
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<Heart size={24} className="text-tims-red" />
 						</div>
 						<p className="text-center text-xs font-medium">Community</p>
-					</div>
+					</div> */}
 
 					<div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
@@ -124,29 +132,29 @@ const App = () => {
 						</p>
 					</div>
 
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<Gift size={24} className="text-tims-red" />
 						</div>
 						<p className="text-center text-xs font-medium">Give</p>
-					</div>
+					</div> */}
 
 					{/* Row 3 */}
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<MapPin size={24} className="text-red-500" />
 						</div>
 						<p className="text-center text-xs font-medium">
 							Restaurant Locator
 						</p>
-					</div>
+					</div> */}
 
-					<div className="flex flex-col items-center">
+					{/* <div className="flex flex-col items-center">
 						<div className="bg-white p-4 rounded-xl shadow-sm w-16 h-16 flex items-center justify-center mb-2">
 							<div className="w-8 h-8 text-amber-800">🤝</div>
 						</div>
 						<p className="text-center text-xs font-medium">Join our team</p>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
@@ -155,26 +163,28 @@ const App = () => {
 				<div className="flex justify-around items-center h-16">
 					<div className="flex flex-col items-center">
 						<div className="h-1 w-16 bg-tims-red mb-2"></div>
-						<div className="flex flex-col items-center">
-							<Home size={24} className="text-tims-red" />
-							<span className="text-xs font-bold text-tims-red mt-1">Home</span>
-						</div>
+						<Home size={24} className="text-tims-red" />
+						<span className="text-xs font-bold text-tims-red mt-1">Home</span>
 					</div>
 
 					<div className="flex flex-col items-center">
-						<div className="flex flex-col items-center">
-							<div className="w-6 h-6 border-2 border-gray-800 rounded mt-1"></div>
-							<span className="text-xs font-bold text-gray-800 mt-1">Scan</span>
-						</div>
+						<div className="h-1 w-16 bg-transparent mb-2"></div>
+						<ScanQrCode size={24} className="text-gray-800" />
+						<span className="text-xs font-bold text-gray-800 mt-1">Scan</span>
 					</div>
 
 					<div className="flex flex-col items-center">
-						<div className="flex flex-col items-center">
-							<User size={24} className="text-gray-800" />
-							<span className="text-xs font-bold text-gray-800 mt-1">
-								Profile
-							</span>
-						</div>
+						<div className="h-1 w-16 bg-transparent mb-2"></div>
+						<Sparkles size={24} className="text-gray-800" />
+						<span className="text-xs font-bold text-gray-800 mt-1">Offers</span>
+					</div>
+
+					<div className="flex flex-col items-center">
+						<div className="h-1 w-16 bg-transparent mb-2"></div>
+						<User size={24} className="text-gray-800" />
+						<span className="text-xs font-bold text-gray-800 mt-1">
+							Profile
+						</span>
 					</div>
 				</div>
 			</div>
