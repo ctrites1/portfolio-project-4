@@ -22,7 +22,7 @@ const App = () => {
 
 	const renderLoggedInHome = () => {
 		return (
-			<div className="flex flex-col h-screen bg-gray-50">
+			<div className="flex flex-col h-screen bg-gray-50 max-w-lg mx-auto">
 				<header className="px-6 pt-6 pb-2 flex justify-between items-center">
 					<div className="flex items-center">
 						<span className="text-xl italic font-bold text-red-600">Tims</span>
@@ -61,7 +61,6 @@ const App = () => {
 							<div className="flex-1 flex flex-col items-center justify-center mb-8">
 								<div className="text-4xl font-bold text-red-600">1,369</div>
 								<div className="text-sm font-medium text-gray-500">Points</div>
-								{/* Progress bar */}
 								<div className="w-32 h-2 bg-gray-200 rounded-full mt-2 overflow-hidden">
 									<div className="bg-red-600 h-full w-3/4 rounded-full"></div>
 								</div>
@@ -157,7 +156,7 @@ const App = () => {
 						</div>
 					</div>
 				</div>
-				<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+				<div className="sticky bottom-0 w-full bg-white border-t border-gray-200 shadow-lg mt-auto">
 					<div className="flex justify-around items-center h-16">
 						<button
 							onClick={() => setActiveTab("home")}
@@ -262,7 +261,7 @@ const App = () => {
 
 	const renderTimsPlusPage = () => {
 		return (
-			<div className="flex flex-col h-screen bg-gray-50">
+			<div className="flex flex-col h-screen bg-gray-50 max-w-lg mx-auto">
 				<header className="px-6 pt-6 pb-4 flex justify-between items-center">
 					<div className="flex items-center">
 						<button onClick={() => setCurrentPage("main")} className="mr-3 p-1">
@@ -351,7 +350,7 @@ const App = () => {
 					</div>
 				</div>
 
-				<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+				<div className="sticky bottom-0 w-full bg-white border-t border-gray-200 shadow-lg mt-auto">
 					<div className="flex justify-around items-center h-16">
 						<button className="flex flex-col items-center w-1/4">
 							<div className="h-1 w-16 bg-transparent mb-1"></div>
@@ -392,7 +391,7 @@ const App = () => {
 	}
 
 	return (
-		<div className="flex flex-col h-screen bg-gray-50">
+		<div className="flex flex-col h-screen bg-gray-50 max-w-lg mx-auto">
 			<header className="px-6 pt-6 pb-2 flex justify-between items-center">
 				<div className="flex items-center">
 					<span className="text-xl italic font-bold text-red-600">Tims</span>
@@ -540,7 +539,7 @@ const App = () => {
 				</div>
 			</div>
 
-			<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+			<div className="sticky bottom-0 w-full bg-white border-t border-gray-200 shadow-lg mt-auto">
 				<div className="flex justify-around items-center h-16">
 					<button
 						onClick={() => setActiveTab("home")}
