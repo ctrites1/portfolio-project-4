@@ -2,6 +2,9 @@
 
 @theme {
 	--color-tims-red: #c9102e;
+	--color-background: rgba(255, 253, 249, 255);
+	--color-edge: rgba(246, 243, 235, 255)
+		/* --color-background: rgba(246, 243, 235, 255); */;
 }
 
 :root {

@@ -22,7 +22,7 @@ const App = () => {
 
 	const renderLoggedInHome = () => {
 		return (
-			<div className="flex flex-col h-screen bg-gray-50 max-w-lg mx-auto">
+			<div className="flex flex-col h-screen bg-background max-w-lg mx-auto">
 				<header className="px-6 pt-6 pb-2 flex justify-between items-center">
 					<div className="flex items-center">
 						<span className="text-xl italic font-bold text-red-600">Tims</span>
@@ -261,7 +261,7 @@ const App = () => {
 
 	const renderTimsPlusPage = () => {
 		return (
-			<div className="flex flex-col h-screen bg-gray-50 max-w-lg mx-auto">
+			<div className="flex flex-col h-screen bg-background max-w-lg mx-auto">
 				<header className="px-6 pt-6 pb-4 flex justify-between items-center">
 					<div className="flex items-center">
 						<button onClick={() => setCurrentPage("main")} className="mr-3 p-1">
@@ -391,7 +391,7 @@ const App = () => {
 	}
 
 	return (
-		<div className="flex flex-col h-screen bg-gray-50 max-w-lg mx-auto">
+		<div className="flex flex-col h-screen bg-background max-w-lg mx-auto">
 			<header className="px-6 pt-6 pb-2 flex justify-between items-center">
 				<div className="flex items-center">
 					<span className="text-xl italic font-bold text-red-600">Tims</span>
